@@ -5,9 +5,19 @@ $ ssh -keygen -t rsa -C "shui52478@gmail.com" 一路enter生成ssh文件
 将生成的id_rsa.pub里面的key复制到GitHub，Account Settings，左边选择SSH Keys，Add SSH Key
 $ git remote add origin https://github.com/dota2mugen/testUpload.git
 $ git add .
+$ git commit -m "first commit"
 $ git config --global user.email "shui52478@gmail.com"
 $ git config --global user.name "dota2mugen"
 $ git pull https://github.com/dota2mugen/testUpload.git --allow-unrelated-histories
 退出VI模式的命令 esc然后输入:q!或wq!
 $ git push -u origin master
+
+之后同一台电脑上，即使不同的项目也不用再生成key和输入用户名及邮箱了。
+
+有更新的时候
+$ git add .
+$ git commit -m "更新注释"
+$ git pull
+$ git push
+
 
