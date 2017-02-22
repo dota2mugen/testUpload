@@ -1,0 +1,2 @@
+先下载安装git工具
+项目所在路径：右键 - git bash here - $ git init(在当前路径会生成.git文件) - 右键 git gui here
