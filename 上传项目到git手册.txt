@@ -1,2 +1,13 @@
 先下载安装git工具
-项目所在路径：右键 - git bash here - $ git init(在当前路径会生成.git文件) - 右键 git gui here
+项目所在路径：右键 - git bash here - 
+$ git init(在当前路径会生成.git文件);
+$ ssh -keygen -t rsa -C "shui52478@gmail.com" 一路enter生成ssh文件
+将生成的id_rsa.pub里面的key复制到GitHub，Account Settings，左边选择SSH Keys，Add SSH Key
+$ git remote add origin https://github.com/dota2mugen/testUpload.git
+$ git add .
+$ git config --global user.email "shui52478@gmail.com"
+$ git config --global user.name "dota2mugen"
+$ git pull https://github.com/dota2mugen/testUpload.git --allow-unrelated-histories
+退出VI模式的命令 esc然后输入:q!或wq!
+$ git push -u origin master
+
